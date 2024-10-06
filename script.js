@@ -25,9 +25,13 @@ function gen() {
 function copypass() {
     const inputElement = document.getElementById("result");
         inputElement.select();
+    /*the code given below might not work under some circumstances where Clipboard API is not allowed to be used.
+    In that case you can use the commented code written below*/
         navigator.clipboard.writeText(inputElement.value).then(() => {
             alert("Password copied: " + inputElement.value);
         }).catch(err => {
             alert("Failed to copy text: " + err);
         });
+        /*document.execCommand("copy");
+        alert("Character copied: " + inputElement.value);*/
 }
