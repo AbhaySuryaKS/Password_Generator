@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Password Generator</h2>
+        <form onsubmit="return false;">
+            <label for="passlength">Enter Length Of Password Required <br> (Range 6-20)</label>
+            <input type="number" id="passlength" min="6" max="20" required>
+            <button type="submit" onclick="gen()">Get Password</button> <!-- Button should be of type button -->
+        </form>
+        <input type="text" id="result" readonly>
+        <button id="copybtn" onclick="copypass()">Copy</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
