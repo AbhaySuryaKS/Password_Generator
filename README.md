@@ -41,4 +41,5 @@ The application consists of the following:
 - JavaScript
 
 ## License
-This project is open-source and free to use. https://codepen.io/codemaster2301/pen/xxvqwdp
+This project is open-source and free to use. 
+https://codepen.io/AbhaySuryaKS/pen/xxvqwdp
